@@ -1,2 +1,55 @@
-<h1>Привет, меня зовут Дима</h1>
-<p>Это моё портфолио.</p>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Дима | Портфолио</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    background-image: url("https://picsum.photos/id/1015/1920/1080");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .overlay {
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.55);
+    padding: 40px 20px;
+  }
+  .container { max-width: 800px; margin: 0 auto; }
+  h1 { font-size: 42px; margin: 0 0 10px; }
+  h2 { margin-top: 40px; }
+  .card {
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 15px 0;
+  }
+  a { color: #8fd3ff; }
+</style>
+</head>
+<body>
+  <div class="overlay">
+    <div class="container">
+      <h1>Привет, меня зовут Дима</h1>
+      <p>Это моё портфолио.</p>
+
+      <h2>Обо мне</h2>
+      <div class="card">Я клути.</div>
+
+      <h2>Мои работы</h2>
+      <div class="card">Работа 1: что сделал и какой результат.</div>
+      <div class="card">Работа 2: что сделал и какой результат.</div>
+
+      <h2>Контакты</h2>
+      <div class="card">Telegram: <a href="https://t.me/ваш_ник">@RDS</a></div>
+    </div>
+  </div>
+</body>
+</html>
