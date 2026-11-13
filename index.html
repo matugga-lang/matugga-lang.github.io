@@ -1,36 +1,43 @@
 <!DOCTYPE html>
-<html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Дима | Портфолио</title>
+<html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>RDS | Портфолио</title>
 <style>
+:root{--a:#7c9cff;--b:#c07cff}
 *{box-sizing:border-box;margin:0}
 html{scroll-behavior:smooth}
-body{font-family:system-ui,Arial,sans-serif;background:#0b0d12;color:#e8eaf0;line-height:1.6}
+body{font-family:Inter,system-ui,Arial,sans-serif;background:#07080d;color:#e9ebf2;line-height:1.6;overflow-x:hidden}
 a{color:inherit;text-decoration:none}
-nav{position:fixed;top:0;left:0;right:0;z-index:9;display:flex;justify-content:space-between;padding:16px 6%;background:rgba(11,13,18,.7);backdrop-filter:blur(10px)}
-nav a{margin-left:20px;font-size:14px;opacity:.8}
-.hero{min-height:100vh;display:flex;align-items:center;padding:0 6%;background:linear-gradient(90deg,rgba(11,13,18,.92),rgba(11,13,18,.35)),url(IMG_20261113_233349_945.jpg) center/cover}
-.hero h1{font-size:clamp(36px,7vw,72px);line-height:1.1}
-.hero span{color:#6ea8ff}
-.hero p{max-width:520px;margin:20px 0 30px;font-size:18px;opacity:.85}
-.btn{display:inline-block;padding:14px 28px;border-radius:30px;background:#6ea8ff;color:#0b0d12;font-weight:600;transition:.3s}
-.btn:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(110,168,255,.4)}
-section{padding:90px 6%;max-width:1100px;margin:auto}
-h2{font-size:32px;margin-bottom:30px}
+nav{position:fixed;inset:0 0 auto;z-index:9;display:flex;justify-content:space-between;padding:16px 6%;background:#07080d99;backdrop-filter:blur(14px)}
+nav a{margin-left:22px;font-size:14px;opacity:.7}
+.hero{min-height:100vh;display:flex;align-items:center;padding:0 6%;background:linear-gradient(100deg,#07080dee 25%,#07080d55),url(IMG_20261113_233349_945.jpg) center/cover}
+h1{font-size:clamp(40px,8vw,86px);line-height:1.05;letter-spacing:-2px}
+h1 span,h2 span{background:linear-gradient(90deg,var(--a),var(--b));-webkit-background-clip:text;color:transparent}
+.hero p{max-width:480px;margin:22px 0 34px;font-size:18px;opacity:.8}
+.btn{display:inline-block;padding:15px 32px;border-radius:40px;background:linear-gradient(90deg,var(--a),var(--b));color:#07080d;font-weight:700;transition:.3s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 12px 40px #7c9cff66}
+section{padding:100px 6%;max-width:1100px;margin:auto}
+h2{font-size:clamp(28px,5vw,44px);margin-bottom:34px}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}
-.card{background:#151821;border-radius:16px;overflow:hidden;transition:.3s}
-.card:hover{transform:translateY(-6px)}
-.card img{width:100%;height:240px;object-fit:cover;display:block}
+.card{background:#10121a;border:1px solid #ffffff14;border-radius:20px;overflow:hidden;transition:.4s}
+.card:hover{transform:translateY(-8px);border-color:#7c9cff88}
+.card img{width:100%;height:260px;object-fit:cover;display:block;transition:.6s}
+.card:hover img{transform:scale(1.06)}
 .card div{padding:20px}
-.card p{font-size:14px;opacity:.7}
-footer{text-align:center;padding:40px;opacity:.5;font-size:14px}
+.card p{font-size:14px;opacity:.6}
+.box{padding:40px;border-radius:24px;background:linear-gradient(135deg,#7c9cff22,#c07cff22);border:1px solid #ffffff18;text-align:center}
+.box p{margin-bottom:24px;opacity:.8}
+footer{text-align:center;padding:40px;opacity:.4;font-size:13px}
+.r{opacity:0;transform:translateY(30px);transition:1s}
+.r.v{opacity:1;transform:none}
 </style></head><body>
-<nav><b>ДИМА</b><div><a href="#about">Обо мне</a><a href="#works">Фото</a><a href="#contact">Контакты</a></div></nav>
-<header class="hero"><div><h1>Привет, я <span>Дима</span></h1><p>Коротко о том, чем вы занимаетесь и чем можете быть полезны.</p><a class="btn" href="#works">Смотреть</a></div></header>
-<section id="about"><h2>Обо мне</h2><p>Напишите 2-3 предложения о себе: опыт, навыки, чем гордитесь.</p></section>
-<section id="works"><h2>Галерея</h2><div class="grid">
-<div class="card"><img src="IMG_20261113_233350_195.jpg" alt=""><div><h3>Фото 1</h3><p>Подпись к фото.</p></div></div>
-<div class="card"><img src="IMG_20261113_233350_534.jpg" alt=""><div><h3>Фото 2</h3><p>Подпись к фото.</p></div></div>
-<div class="card"><img src="IMG_20261113_233349_945.jpg" alt=""><div><h3>Фото 3</h3><p>Подпись к фото.</p></div></div>
+<nav><b>RDS</b><div><a href="#about">Обо мне</a><a href="#works">Фото</a><a href="#contact">Контакты</a></div></nav>
+<header class="hero"><div><h1>Привет, я <span>RDS</span></h1><p>Здесь коротко о том, кто вы и чем занимаетесь.</p><a class="btn" href="#contact">Связаться</a></div></header>
+<section id="about" class="r"><h2>Обо <span>мне</span></h2><p>Напишите 2-3 предложения о себе: опыт, навыки, чем гордитесь.</p></section>
+<section id="works" class="r"><h2>Мои <span>фото</span></h2><div class="grid">
+<div class="card"><img src="IMG_20261113_233350_195.jpg" alt=""><div><h3>Фото 1</h3><p>Подпись</p></div></div>
+<div class="card"><img src="IMG_20261113_233350_534.jpg" alt=""><div><h3>Фото 2</h3><p>Подпись</p></div></div>
+<div class="card"><img src="IMG_20261113_233349_945.jpg" alt=""><div><h3>Фото 3</h3><p>Подпись</p></div></div>
 </div></section>
-<section id="contact"><h2>Контакты</h2><a class="btn" href="https://t.me/RDS>Написать в Telegram</a></section>
-<footer>© 2026 Дима</footer>
+<section id="contact" class="r"><h2>Мои <span>контакты</span></h2><div class="box"><p>Пишите, отвечу в Telegram</p><a class="btn" href="https://t.me/LELIK1488">@LELIK1488</a></div></section>
+<footer>© 2026 RDS</footer>
+<script>const o=new IntersectionObserver(e=>e.forEach(x=>x.isIntersecting&&x.target.classList.add('v')));document.querySelectorAll('.r').forEach(e=>o.observe(e))</script>
 </body></html>
