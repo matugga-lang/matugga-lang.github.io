@@ -1,56 +1,36 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Дима | Портфолио</title>
+<html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Дима | Портфолио</title>
 <style>
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    min-height: 100vh;
-    font-family: Arial, sans-serif;
-    color: #fff;
-    background: linear-gradient(135deg, #1e3c72, #2a5298);
-    background-image: url("https://picsum.photos/id/1015/1920/1080");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-  }
-  .overlay {
-    min-height: 100vh;
-    background: rgba(0, 0, 0, 0.55);
-    padding: 40px 20px;
-  }
-  .container { max-width: 800px; margin: 0 auto; }
-  h1 { font-size: 42px; margin: 0 0 10px; }
-  h2 { margin-top: 40px; }
-  .card {
-    background: rgba(255, 255, 255, 0.12);
-    border-radius: 12px;
-    padding: 20px;
-    margin: 15px 0;
-  }
-  a { color: #8fd3ff; }
-</style>
-</head>
-<body>
-  <div class="overlay">
-    <div class="container">
-      <h1>Привет, меня зовут Дима</h1>
-      <p>Это моё портфолио.</p>
-
-      <h2>Обо мне</h2>
-      <div class="card">Я клути.</div>
-
-      <h2>Мои работы</h2>
-      <div class="card">Работа 1: что сделал и какой результат.</div>
-      <div class="card">Работа 2: что сделал и какой результат.</div>
-
-      <h2>Контакты</h2>
-      <div class="card">Telegram: <a href="https://t.me/ваш_ник">@RDS</a></div>
-    </div>
-  </div>
-</body>
-</html>
-https://picsum.photos/id/1015/1920/1080
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:system-ui,Arial,sans-serif;background:#0b0d12;color:#e8eaf0;line-height:1.6}
+a{color:inherit;text-decoration:none}
+nav{position:fixed;top:0;left:0;right:0;z-index:9;display:flex;justify-content:space-between;padding:16px 6%;background:rgba(11,13,18,.7);backdrop-filter:blur(10px)}
+nav a{margin-left:20px;font-size:14px;opacity:.8}
+.hero{min-height:100vh;display:flex;align-items:center;padding:0 6%;background:linear-gradient(90deg,rgba(11,13,18,.92),rgba(11,13,18,.4)),url(https://picsum.photos/id/1015/1800/1100) center/cover}
+.hero h1{font-size:clamp(36px,7vw,72px);line-height:1.1}
+.hero span{color:#6ea8ff}
+.hero p{max-width:520px;margin:20px 0 30px;font-size:18px;opacity:.85}
+.btn{display:inline-block;padding:14px 28px;border-radius:30px;background:#6ea8ff;color:#0b0d12;font-weight:600;transition:.3s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(110,168,255,.4)}
+section{padding:90px 6%;max-width:1100px;margin:auto}
+h2{font-size:32px;margin-bottom:30px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}
+.card{background:#151821;border-radius:16px;overflow:hidden;transition:.3s}
+.card:hover{transform:translateY(-6px)}
+.card img{width:100%;height:180px;object-fit:cover;display:block}
+.card div{padding:20px}
+.card p{font-size:14px;opacity:.7}
+footer{text-align:center;padding:40px;opacity:.5;font-size:14px}
+</style></head><body>
+<nav><b>ДИМА</b><div><a href="#about">Обо мне</a><a href="#works">Работы</a><a href="#contact">Контакты</a></div></nav>
+<header class="hero"><div><h1>Привет, я <span>Дима</span></h1><p>Коротко о том, чем вы занимаетесь и чем можете быть полезны.</p><a class="btn" href="#works">Смотреть работы</a></div></header>
+<section id="about"><h2>Обо мне</h2><p>Напишите 2-3 предложения о себе: опыт, навыки, чем гордитесь.</p></section>
+<section id="works"><h2>Работы</h2><div class="grid">
+<div class="card"><img src="https://picsum.photos/id/1018/600/400" alt=""><div><h3>Проект 1</h3><p>Задача, что сделал, результат.</p></div></div>
+<div class="card"><img src="https://picsum.photos/id/1043/600/400" alt=""><div><h3>Проект 2</h3><p>Задача, что сделал, результат.</p></div></div>
+<div class="card"><img src="https://picsum.photos/id/1036/600/400" alt=""><div><h3>Проект 3</h3><p>Задача, что сделал, результат.</p></div></div>
+</div></section>
+<section id="contact"><h2>Контакты</h2><a class="btn" href="https://t.me/ваш_ник">Написать в Telegram</a></section>
+<footer>© 2026 Дима</footer>
+</body></html>
